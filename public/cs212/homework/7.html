@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> Homework 7 </title>
+<style>
+
+div.container {
+
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 3fr 250px;
+  grid-template-areas:
+    "head head head"
+    "panleft mainbody panright"
+    "foot foot foot";
+}
+
+div.header {
+
+  background: rgb(75, 50, 20, 0.2);
+  grid-area: head;
+  text-align: center;
+}
+
+div.footer {
+  background: rgb(75, 50, 20, 0.2);
+  grid-area: foot;
+}
+
+
+
+div.panel {
+  background: rgb(20, 20, 20, 0.2);
+
+}
+
+
+
+div.mainbody {
+
+  background: rgb(50, 50, 20, 0.2);
+  grid-area: mainbody;
+  text-align:center;
+  font-size:15px;
+
+}
+
+
+
+div.panel.left {
+  grid-area: panleft;
+  text-align: center;
+  font-size: 30px;
+
+}
+
+
+
+div.panel.right {
+
+  grid-area: panright;
+
+}
+
+body {
+
+  background-color: grey;
+
+}
+
+h1 {
+
+  color: Black;
+  text-align: center;
+  font-size: 60px;
+
+}
+
+p {
+
+    font-family: verdana;
+    font-size:20px;
+
+}
+
+</style>
+</head>
+<script type="module" src="hw7game2.js"></script>
+<body>
+
+    <div class="container">
+
+    <div class="header"><h1> Smart Computer..? </h1></div>
+
+    <div class="panel left">
+
+    <a href=http://akielaries.xyz rel="noopener norefferer" target="_blank"> Homepage</a><br><br>
+    <a href=http://akielaries.xyz/cs212/homework/1 rel="noopener norefferer" target="_blank"> Homework 1 </a><br><br>
+    <a href=http://akielaries.xyz/cs212/homework/2 rel="noopener norefferer" target="_blank"> Homework 2 </a><br><br>
+    <a href=http://akielaries.xyz/cs212/homework/3 rel="noopener norefferer" target="_blank"> Homework 3 </a><br><br>
+    <a href=http://akielaries.xyz/cs212/homework/4 rel="noopener norefferer" target="_blank"> Homework 4 </a><br><br>
+    <a href=http://akielaries.xyz/cs212/homework/7 rel="noopener norefferer" target="_blank"> Homework 7 </a><br><br>
+    
+    </div>
+
+      
+
+    <div class="mainbody">
+
+
+        <p class="Instructions">
+            Between the specified range, choose two numbers and I will tell you which is of greater value.
+
+                    </p>
+
+                    <input id="box1" type="number" min="0" max="1400">
+                    <input id="box2" type="number" min="0" max="1400">
+                    <button id="startButton">Begin</button>
+                    <p></p>
+                    <div id="finalMessage"></div>
+
+    </div>
+
+    <div class="panel right">
+
+    <a href="https://www.amazon.com/Cadcah-Ergonomic-Computer-Reclining-Adjustment/dp/B08FC8D9FZ/ref=sr_1_4_sspa?crid=20SMNVOC6QS7X&keywords=gaming%2Bchair&qid=1636679517&sprefix=gaming%2Caps%2C239&sr=8-4-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFLOTlBVjJSOVM0QUEmZW5jcnlwdGVkSWQ9QTA1OTcwNjgxRUlOMDI4TldZT1VQJmVuY3J5cHRlZEFkSWQ9QTA2NDE4MTgxUkI4SkpHSDVCNUZVJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ&th=1"> 
+
+    <a href="https://www.amazon.com/Logitech-G502-Performance-Gaming-Mouse/dp/B07GBZ4Q68/ref=sr_1_5?keywords=mouse&qid=1636773749&sr=8-5" rel="noopener noreferrer" target="_blank">
+
+	<img src="mouse.jpg" alt="Mouse" width=500px height=500>
+
+    </a>
+
+    </div>
+
+      
+
+    <div class="footer">
+
+    <h2>Addendum</h2>
+    <br>
+        As my first time playing with javascript I was lent a hand by the internet. The game I used takes two values and 
+        determines which of the two is of greater value. 
+    </br>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
+
+

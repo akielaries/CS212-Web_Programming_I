@@ -1,0 +1,36 @@
+table.blueTable {
+  border: 1px solid #1C6EA4;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.blueTable td, table.blueTable th {
+  padding: 10px 10px;
+}
+table.blueTable tbody td {
+  font-size: 13px;
+}
+table.blueTable tr:nth-child(even) {
+  background: #F2F2F2;
+}
+table.blueTable thead {
+  background: #87CEEB;
+  background: -moz-linear-gradient(top, #a5daf0 0%, #93d3ed 66%, #87CEEB 100%);
+  background: -webkit-linear-gradient(top, #a5daf0 0%, #93d3ed 66%, #87CEEB 100%);
+  background: linear-gradient(to bottom, #a5daf0 0%, #93d3ed 66%, #87CEEB 100%);
+  border-bottom: 2px solid #444444;
+}
+table.blueTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #4169E1;
+  border-left: 2px solid #D0E4F5;
+}
+table.blueTable thead th:first-child {
+  border-left: none;
+}
+
+table.blueTable tfoot {
+  font-weight: bold;
+}
+

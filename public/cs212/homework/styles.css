@@ -1,0 +1,65 @@
+/* Fonts */
+@font-face {
+  font-family: 'florante';
+  src: url('./Fonts/Florante-at-Laura/FLORLRG_.ttf');
+}
+
+@font-face {
+  font-family: 'quint';
+  src: url('./Fonts/quintessential/Quintessential-Regular.ttf');
+}
+
+/* Changed defaults */
+body {
+  background-color: #d99d44;
+}
+
+h1 {
+  font-family: "florante";
+
+  color: #000000;
+}
+
+p {
+  font-family: "quint";
+  font-size: 1.3rem;
+  font-weight: 600;
+
+  line-height: 1.9rem;
+
+  word-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
+
+  padding-left: 2.4rem;
+
+  color: #000000;
+}
+
+/* Selectors */
+italicize {
+  font-style: italic;
+}
+
+/* IDs and Classes */
+#page-title {
+  font-size: 3rem;
+
+  width: 45rem;
+
+  border-top: 0rem;
+  border-bottom: 0.3rem;
+  border-left: 0rem;
+  border-right: 0rem;
+  border-style: solid;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+}
+
+.sub-heading {
+  font-size: 1.4rem;
+
+  padding-left: 1.2rem;
+}
+
